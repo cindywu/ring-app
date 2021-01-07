@@ -21,7 +21,7 @@
 
 (defn -main []
   (jetty/run-jetty
-    (-> #'handler wrap-nocache wrap-reload)
+    (-> #'handler wrap-nocache wrap-reload wrap-formats)
     {:port 3000
      :join? false}))
 

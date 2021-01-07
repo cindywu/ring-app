@@ -1,8 +1,8 @@
 (ns ring-app.core
   (:require [ring.adapter.jetty :as jetty]
             [ring.util.http-response :as response]
-            [ring.middleware.reload :refer [wrap-reload]
-            [ring.middleware.format :refer [wrap-restful-format]]]))
+            [ring.middleware.reload :refer [wrap-reload]]
+            [ring.middleware.format :refer [wrap-restful-format]]))
 
 (defn handler [request]
   (response/ok
